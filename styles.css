@@ -55,6 +55,7 @@
     line-height: normal;
     letter-spacing: -0.1px;
 }
+/* nav logo styles end */
 
 /* nav list styles */
 .navigation-list {
@@ -77,7 +78,7 @@
 }
 
 
-.navigation-list__navigation-item-selected {
+.navigation-list__navigation-item_selected {
     color: #FFF;
     border-radius: 8px;
     background: #5932EA;
@@ -97,6 +98,7 @@
     top: 15px;
     right: 8px;
 }
+/* nav list styles end */
 
 /* nav user styles */
 .navigation-container__user {
@@ -136,12 +138,15 @@
     line-height: normal;
     letter-spacing: 0.12px;
 }
+/* nav user styles end */
+
+/* nav styles end */
 
 /* content styles */
 .content {
-    padding: 128px 95px 0 71px;
+    padding: 42px 75px 0 71px;
     background: #FAFBFF;
-    width: calc(100vw - 360px)
+    width: calc(100vw - 325px)
     
 }
 
@@ -152,12 +157,15 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    padding-bottom: 52px;
 }
 
 .all-customers-block {
-    fill: #FFF;
+    background-color: #FFF;
     filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.50));
-    padding: 30px 34px 40px 58px;
+    padding: 30px 34px 40px 38px;
+    position: relative;
+    border-radius: 25px;
 }
 
 .all-customers-block__heading {
@@ -168,6 +176,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.22px;
+    padding-bottom: 7px;
 }
 
 .all-customers-block__status {
@@ -180,7 +189,150 @@
     letter-spacing: -0.14px;
 }
 
+/* search block */
 .all-customers-block__search {
     border-radius: 10px;
     background: #F9FBFF;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    position:absolute;
+    top: 50px;
+    right: 187px;
 }
+
+.search__image {
+
+}
+/* search block end */
+
+.search__text {
+    color: #B5B7C0;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.12px;
+}
+
+/* customers table */
+
+.all-customers-block__customers-table {
+    padding-top: 15px;
+}
+
+.customers-table__heading {
+    display: grid;
+    grid-template-columns: 172fr 131fr 156fr 207fr 140fr 80fr;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 14px;
+    padding-top: 23px;
+}
+
+.customers-table__heading h4 {
+    color: #B5B7C0;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+}
+
+.customers-table__row {
+    display: grid;
+    grid-template-columns: 172fr 131fr 156fr 207fr 140fr 90fr;
+    border-bottom: 1px solid #EEE;
+    height: 69px;
+    align-items: center;
+}
+.customers-table__row p {
+    color: #292D32;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+}
+
+.customers-table__status-display {
+    display: flex;
+    width: 82px;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #DF0404;
+    background: #FFC5C5;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    color: #DF0404;
+}
+
+.customers-table__status-display_active {
+    border: 1px solid #00B087;
+    background: rgba(22, 192, 152, 0.38);
+    color: #008767;
+}
+/* customers table end */
+
+.all-customers-block__bottom-text {
+    padding-top: 32px;
+    color: #B5B7C0;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+}
+
+/* pagination styles */
+.all-customers-block__pagination-box {
+    position: absolute;
+    bottom: 39px;
+    right: 41px;
+    display: flex;
+    gap: 12px;
+    
+}
+
+.pagination-box__item {
+    border-radius: 4px;
+    border: 1px solid #EEE;
+    background: #F5F5F5;
+    color: #404B52;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    letter-spacing: -0.12px;
+    width: 25px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-box__item_selected {
+    border: 1px solid #5932EA;
+    background: #5932EA;
+    color: #FFF;
+}
+
+.pagination-box__dots {
+    width: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* pagination styles end */
+
+/* content styles end */

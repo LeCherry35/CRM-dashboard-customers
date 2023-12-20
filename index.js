@@ -25,11 +25,73 @@ const navData = [
     }
 ]
 
-const navList = document.querySelector('.navigation-list')
+const customersData = [
+    {
+        name: "Jane Cooper",
+        company: "Microsoft",
+        phone: "(225) 555-0118",
+        email: "jane@microsoft.com",
+        country: "United States",
+    },
+    {
+        name: "Jane Cooper",
+        company: "Microsoft",
+        phone: "(225) 555-0118",
+        email: "jane@microsoft.com",
+        country: "United States",
+    },
+    {
+        name: "Jane Cooper",
+        company: "Microsoft",
+        phone: "(225) 555-0118",
+        email: "jane@microsoft.com",
+        country: "United States",
+    },
+    {
+        name: "Jane Cooper",
+        company: "Microsoft",
+        phone: "(225) 555-0118",
+        email: "jane@microsoft.com",
+        country: "United States",
+    },
+    {
+        name: "Jane Cooper",
+        company: "Microsoft",
+        phone: "(225) 555-0118",
+        email: "jane@microsoft.com",
+        country: "United States",
+    },
+    {
+        name: "Jane Cooper",
+        company: "Microsoft",
+        phone: "(225) 555-0118",
+        email: "jane@microsoft.com",
+        country: "United States",
+    },
+    {
+        name: "Jane Cooper",
+        company: "Microsoft",
+        phone: "(225) 555-0118",
+        email: "jane@microsoft.com",
+        country: "United States",
+    },
+    {
+        name: "Jane Cooper",
+        company: "Microsoft",
+        phone: "(225) 555-0118",
+        email: "jane@microsoft.com",
+        country: "United States",
+    },
+
+]
+
+// fill nav 
+const navList = document.querySelector(".navigation-list")
+
 navData.map((navItem, id) => {
     const navItemElement = document.createElement("li")
     navItemElement.classList.add("navigation-list__navigation-item")
-    if(id === 2) navItemElement.classList.toggle("navigation-list__navigation-item-selected")
+    if(id === 2) navItemElement.classList.toggle("navigation-list__navigation-item_selected")
 
     const navImage = document.createElement("img")
     navImage.src = "./img/menu-icons/" + navItem.imgName
@@ -46,5 +108,32 @@ navData.map((navItem, id) => {
     navItemElement.append(navImage, navText, navChevron)
     navList.append(navItemElement)
 
+})
+
+// fill customers table
+
+const customersTable = document.querySelector(".all-customers-block__customers-table")
+console.log(customersTable);
+customersData.map((customer,id) => {
+    const row = document.createElement("div")
+    row.classList.add("customers-table__row")
+    row.innerHTML = `
+        <p>${customer.name}</p>
+        <p>${customer.company}</p>
+        <p>${customer.phone}</p>
+        <p>${customer.email}</p>
+        <p>${customer.country}</p>
+    `
+    
+    const status = document.createElement("div")
+    status.classList.add("customers-table__status-display")
+    
+    if (id === 1 || id === 2 || id === 7) {
+        status.classList.toggle("customers-table__status-display_active")
+        status.innerText = "Active"
+    } else status.innerText = "Inactive"
+    
+    row.append(status)
+    customersTable.append(row)
 })
 
