@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
@@ -13,7 +14,7 @@
                 <div class="logo-box">
                     <img class="logo-box__logo" src="./img/logo.svg"/>
                     <h1 class="logo-box__name">Dashboard<span class="logo-box__small-text">v.01</span></h1>
-                    
+                    <h1 class="logo-box__menu-opener">+</h1>
                 </div>
                 <nav class="navigation-block__list">
                     <ul class="navigation-list">
@@ -37,16 +38,7 @@
                     <img class="search__image" src="./img/search 1.svg"/>
                     <span class="search__text">Search</span>
                 </div>
-                <div class="all-customers-block__pagination-box">
-                    <div class="pagination-box__item"><</div>
-                    <div class="pagination-box__item pagination-box__item_selected">1</div>
-                    <div class="pagination-box__item">2</div>
-                    <div class="pagination-box__item">3</div>
-                    <div class="pagination-box__item">4</div>
-                    <div class="pagination-box__dots">...</div>
-                    <div class="pagination-box__item">40</div>
-                    <div class="pagination-box__item">></div>
-                </div>
+                
                 <h2 class="all-customers-block__heading" >All Customers</h2>
                 <p class="all-customers-block__status">Active Members</p>
                 <section class="all-customers-block__customers-table">
@@ -59,10 +51,21 @@
                         <h4>Status</h4>
 
                     </div>
+                    <div class="customers-table__content"></div>
                 </section>
                 <p class="all-customers-block__bottom-text">
                     Showing data 1 to 8 of 256K entries
                 </p>
+                <div class="all-customers-block__pagination-box">
+                    <div class="pagination-box__item"><</div>
+                    <div class="pagination-box__item pagination-box__item_selected">1</div>
+                    <div class="pagination-box__item">2</div>
+                    <div class="pagination-box__item">3</div>
+                    <div class="pagination-box__item">4</div>
+                    <div class="pagination-box__dots">...</div>
+                    <div class="pagination-box__item">40</div>
+                    <div class="pagination-box__item">></div>
+                </div>
             </div>
         </main>
     </div>

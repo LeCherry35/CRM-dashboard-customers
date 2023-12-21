@@ -112,7 +112,7 @@ navData.map((navItem, id) => {
 
 // fill customers table
 
-const customersTable = document.querySelector(".all-customers-block__customers-table")
+const customersTable = document.querySelector(".customers-table__content")
 console.log(customersTable);
 customersData.map((customer,id) => {
     const row = document.createElement("div")
@@ -135,5 +135,12 @@ customersData.map((customer,id) => {
     
     row.append(status)
     customersTable.append(row)
+})
+
+//mobile version menu opener
+const menuList = document.querySelector(".navigation-block__list")
+document.querySelector(".logo-box__menu-opener").addEventListener("click", () => {
+    if(menuList.style.display === "none") menuList.style.display = "block"
+    else menuList.style.display = "none"
 })
 
