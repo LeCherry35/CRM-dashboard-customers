@@ -140,7 +140,7 @@ customersData.map((customer,id) => {
 //mobile version menu opener
 const menuList = document.querySelector(".navigation-block__list")
 document.querySelector(".logo-box__menu-opener").addEventListener("click", () => {
-    if(menuList.style.display === "none") menuList.style.display = "block"
-    else menuList.style.display = "none"
+    if(menuList.style.display === "block") menuList.style.display = "none"
+    else menuList.style.display = "block"
 })
 

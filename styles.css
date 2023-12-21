@@ -368,7 +368,7 @@
 
 /* media */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
     .navigation-block__list {
         display: none;
     }
@@ -379,6 +379,9 @@
         height: auto;
         width: 100vw;
         padding: 10px;
+    }
+    .logo-box {
+        justify-content: space-evenly;
     }
     .logo-box__menu-opener {
         display: block;
